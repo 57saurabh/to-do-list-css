@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(135deg,rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)), url(//94735-istock-863607936.jpg);;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.container{
+    border: 2px solid white;
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+padding: 30px 40px;
+border-radius: 5px;
+}
+
+#new-task{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.486);
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(187, 187, 48, 0.493);
+}
+#new-task input{
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid #d1d3d4;
+    font-weight: 500;
+    position: relative;
+    color: black;
+}
+#new-task input:focus{
+    outline: none;
+    border-color: rgba(207, 207, 58, 0.795);
+}
+#new-task button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #525cec;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+#tasks{
+    position: relative;
+    background-color: rgba(240, 240, 240, 0.486);
+    margin-top: 60px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(187, 187, 48, 0.493);
+    width: 100%;
+}
+.task{
+    background-color: rgba(240, 240, 240, 0.486);
+    height: 50px;
+    padding: 5px 10px; 
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:2px solid rgba(207, 207, 58, 0.795) ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.task span{
+    font-size: 15px;
+    font-weight: 400;
+    }
+    .task button{
+        background-color: #525cec;
+        color: white;
+        height: 100%;
+        width: 40px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .completed{
+        text-decoration: line-through;
+    }
